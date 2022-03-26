@@ -1,6 +1,6 @@
 package com.es3.vendas.dto;
 
-import com.es3.vendas.entities.Pedidos;
+import com.es3.vendas.entities.Pedido;
 import lombok.Getter;
 import org.jetbrains.annotations.NotNull;
 
@@ -12,11 +12,11 @@ public class PedidosDto {
     private String descricao;
     private Double valor;
 
-    public PedidosDto(@NotNull Pedidos pedidos) {
-        this.id = pedidos.getId();
-        this.email = pedidos.getEmail();
-        this.descricao = pedidos.getDescricao();
-        this.valor = pedidos.getValor();
+    public PedidosDto(@NotNull Pedido pedido) {
+        this.id = pedido.getId();
+        this.email = pedido.getEmail();
+        this.descricao = pedido.getDescricao();
+        this.valor = pedido.getValor();
     }
 }
 

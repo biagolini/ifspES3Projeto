@@ -1,4 +1,4 @@
-package com.es3.vendas.repository;
+package com.es3.vendas.entities.repository;
 
 import com.es3.vendas.entities.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;

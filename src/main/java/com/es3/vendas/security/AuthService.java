@@ -1,7 +1,7 @@
 package com.es3.vendas.security;
 
 import com.es3.vendas.entities.Usuario;
-import com.es3.vendas.repository.UsuarioRepository;
+import com.es3.vendas.entities.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

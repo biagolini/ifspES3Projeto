@@ -14,11 +14,11 @@ import java.util.Date;
 public class TokenService {
 
     // Chamamos a senha usada para criar os tokens
-    @Value("${forum.jwt.secret}")
+    @Value("${tutorial.jwt.secret}")
     private String secret;
 
     // Chamamos o dado de duração dos tokens
-    @Value("${forum.jwt.expiration}")
+    @Value("${tutorial.jwt.expiration}")
     private String expiration;
 
 

@@ -1,7 +1,8 @@
 package com.es3.vendas.security;
 
 
-import com.es3.vendas.entities.repository.UsuarioRepository;
+import com.es3.vendas.repository.UsuarioRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -49,7 +50,7 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/auth").permitAll()
-                // .antMatchers(HttpMethod.GET, "/pedidos/*").permitAll() // PARA LIBERAR ACESSO AO ENDPOINT, REMOVA A TAG DE COMENTÁRIO DESSA LINHA
+                //.antMatchers(HttpMethod.GET, "/pedidos/*").permitAll() // PARA LIBERAR ACESSO AO ENDPOINT, REMOVA A TAG DE COMENTÁRIO DESSA LINHA
                 .anyRequest().authenticated()
                 .and().csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
